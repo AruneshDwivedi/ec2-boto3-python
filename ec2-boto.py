@@ -13,6 +13,15 @@ key_name = "my-login"
 security_group_ids = ["sg-0e4d813ab0f821b1e"]
 subnet_id = "subnet-0bc5e7f9d0755dbbf"
 
+# Docker auto-install script (runs when EC2 boots)
+user_data_script = """#!/bin/bash
+apt update -y
+apt install docker.io -y
+systemctl start docker
+systemctl enable docker
+usermod -aG docker ubuntu
+"""
+
 # Launch EC2 instance
 response = ec2.run_instances(
     ImageId=image_id,
@@ -22,6 +31,7 @@ response = ec2.run_instances(
     SubnetId=subnet_id,
     MinCount=1,
     MaxCount=1,
+    UserData=user_data_script,
     TagSpecifications=[
         {
             'ResourceType': 'instance',
