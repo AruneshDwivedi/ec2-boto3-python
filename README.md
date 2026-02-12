@@ -1,5 +1,4 @@
-# AWS EC2 Creation using Python (boto3)
-
+# AWS Infrastructure Automation with Python and Docker
 This project demonstrates how to create and manage an AWS EC2 instance using Python and the boto3 library.
 
 It automates infrastructure provisioning instead of creating resources manually from the AWS console.
