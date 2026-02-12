@@ -13,13 +13,17 @@ key_name = "my-login"
 security_group_ids = ["sg-0e4d813ab0f821b1e"]
 subnet_id = "subnet-0bc5e7f9d0755dbbf"
 
-# Docker auto-install script (runs when EC2 boots)
+# Docker auto-install + app deployment script (runs when EC2 boots)
 user_data_script = """#!/bin/bash
 apt update -y
 apt install docker.io -y
 systemctl start docker
 systemctl enable docker
 usermod -aG docker ubuntu
+
+# Deploy application automatically
+docker pull nginx
+docker run -d -p 80:80 nginx
 """
 
 # Launch EC2 instance
@@ -64,3 +68,4 @@ print(f"Instance ID: {instance_id}")
 print(f"Public IP: {public_ip}")
 print(f"Private IP: {private_ip}")
 print(f"Public DNS: {public_dns}")
+print(f"Open in browser: http://{public_ip}")
