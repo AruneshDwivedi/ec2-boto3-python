@@ -77,7 +77,15 @@ Add these inside `/screenshots` folder:
 * EC2 instance running page
 * SSH connection from WSL
 
+<img width="1908" height="1028" alt="Screenshot (245)" src="https://github.com/user-attachments/assets/70d311e3-2e14-43d9-816e-e410779101ad" />
+<img width="1906" height="1028" alt="Screenshot (246)" src="https://github.com/user-attachments/assets/b72cddeb-8dd0-42df-8036-af2f1d9c7a91" />
+
+<img width="1920" height="1034" alt="Screenshot (247)" src="https://github.com/user-attachments/assets/0ac82207-9521-4857-b2f4-28ab5cf388cb" />
+<img width="1920" height="1019" alt="Screenshot (249)" src="https://github.com/user-attachments/assets/8b46801c-d0ed-4272-8171-10f752c15854" />
+<img width="1920" height="1028" alt="Screenshot (248)" src="https://github.com/user-attachments/assets/f28e033f-ddcc-4f7d-822c-aef2a2643ccb" />
+
 ---
+
 
 ## Author
 
