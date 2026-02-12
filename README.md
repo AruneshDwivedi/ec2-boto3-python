@@ -1,7 +1,3 @@
-Here’s a **simple, clean README** you can directly paste into your project.
-
----
-
 # AWS EC2 Creation using Python (boto3)
 
 This project demonstrates how to create and manage an AWS EC2 instance using Python and the boto3 library.
